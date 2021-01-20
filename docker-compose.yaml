@@ -5,4 +5,5 @@ services:
     command: ["python", "sync.py"]
     volumes:
       - ./scripts/:/code
+      - ./credentials.json:/secrets/credentials.json
     env_file: .env
